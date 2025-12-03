@@ -1,1 +1,18 @@
+1. Identify an ML Problem
+Problem: A streaming app learns to recommend the best movie for each user by continuously adjusting to their real-time viewing behavior.
 
+2. Classify the ML Type
+Type: Reinforcement Learning  
+Why: The system learns through repeated interactions. It shows a movie suggestion and sees whether the user watches or skips it. 
+Then it updates its strategy to improve future recommendations. It enhances long-term user engagement through trial-and-feedback cycles. 
+
+3. Outline the ML Workflow
+The system watches how each user interacts with movie suggestions and learns from their choices. 
+It recommends a movie (action), checks if the user watches or skips it (reward), and updates its strategy based on that feedback. 
+Over time, it figures out what each user prefers by balancing trying new recommendations and repeating successful ones. This continuous loop helps the system get smarter with every interaction.
+
+4. Failure Point + Fix
+Failure Point: Bad Evaluation   
+If the reward function is too simple, it might push content that doesn’t truly match user preferences.
+How to Fix It:  
+Refine the reward signal to reflect meaningful engagement, such as full-view completions, replays, or strong ratings. 
